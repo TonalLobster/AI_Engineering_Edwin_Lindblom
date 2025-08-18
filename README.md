@@ -1,2 +1,2 @@
 # AI_Engineering_Edwin_Lindblom
-Ai engineering part of course
+Learning how AI-engineering works :)!

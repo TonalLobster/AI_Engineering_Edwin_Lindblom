@@ -1,0 +1,33 @@
+# Datahantering
+pandas==2.3.1
+numpy==2.3.2
+
+# Visualisering
+matplotlib==3.10.5
+seaborn==0.13.2
+
+# Statistik & ML
+scikit-learn==1.7.1
+scipy==1.16.1
+joblib==1.5.1
+threadpoolctl==3.6.0
+
+# Databas (om du använder DuckDB)
+duckdb==1.3.2
+
+# Tids- och datumhantering
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+
+# Bildhantering (för grafer etc.)
+pillow==11.3.0
+
+# Webbscraping (om du hämtar UV-data)
+requests==2.31.0  # Lägg till om du använder API:er
+
+# Visualisering och parsing
+pyparsing==3.2.3
+cycler==0.12.1
+kiwisolver==1.4.9
+fonttools==4.59.1

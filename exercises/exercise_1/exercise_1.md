@@ -31,10 +31,17 @@ If you want to dive deeper to understand linear regression you can implement it 
 ## 4. Theory questions
 
 a) Draw an illustration of how machine learning, deep learning and artificial intelligence relate to each other and explain it with your own words.
+a) AI is at the middle, inside of that is machine learning, and inside of that circle is deep learning. An AI is something you want to achieve with the help of machine learning, and if you want to make it more specific, you can use deep learning to make it better at solving a specific task.
+
 
 b) What is the main difference between regression and classification?
+b) The main difference between regression and classification is that regression(numerical) is used to predict numeric value. Lets say you want to make it guess how much you could earn based on your age, education and experience, then regression could give you an answer based on the training data.
+Classification(categorical) is used to predict a categorical value. An example is, lets say based on the data it has been trained on, you want to make it guess if it is going to rain next week or not rain. 
+
 
 c) Give an example of a problem that can be solved with regression
+c) One example is to try and predict how fast the acceleration of a car is. you take in the weight, engine type, year of production and maybe horsepower of different car models. And with that data, you can try and get an estimate of how fast the car model you dont know the acceleration of.
+
 
 d) What does scaling data mean, and why do some machine learning algorithm require data to be scaled?
 

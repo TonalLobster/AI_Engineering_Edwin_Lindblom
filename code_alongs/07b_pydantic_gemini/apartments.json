@@ -1,0 +1,39 @@
+{
+   "objects": [
+      {
+         "adress": "Vasagatan 12A",
+         "price_sek": 5950000,
+         "city": "Stockholm",
+         "monthly_fee": 3850,
+         "area": 75
+      },
+      {
+         "adress": "Linnegatan 45B",
+         "price_sek": 3795000,
+         "city": "Göteborg",
+         "monthly_fee": 4200,
+         "area": 68
+      },
+      {
+         "adress": "Davidshallsgatan 3, lgh 1201",
+         "price_sek": 2850000,
+         "city": "Malmö",
+         "monthly_fee": 3100,
+         "area": 55
+      },
+      {
+         "adress": "Kungsängsesplanaden 7",
+         "price_sek": 4100000,
+         "city": "Uppsala",
+         "monthly_fee": 4900,
+         "area": 88
+      },
+      {
+         "adress": "Björkvägen 15",
+         "price_sek": 3495000,
+         "city": "Västerås",
+         "monthly_fee": 0,
+         "area": 115
+      }
+   ]
+}

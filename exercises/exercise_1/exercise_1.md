@@ -44,12 +44,29 @@ c) One example is to try and predict how fast the acceleration of a car is. you 
 
 
 d) What does scaling data mean, and why do some machine learning algorithm require data to be scaled?
+d) Scaling means that you want to standardize the numerical data so that all the data points has similar interval. the reason is that you dont want larger numerical values like salary (75000) to be more "important for the model compared to lower numerical values like age(31). so for short, by scaling you make all the numerical values as equally important to each other.
+scaling is really important in distance-based algorithms, such as KNN. Just because they calculate the "distance" between two data points, it would be heavily influenced by the features with larger magnitudes if not scaled. 
+
 
 e) What is the purpose to split the data into a training part and a test part?
+e) the purpose to split the data is to not give the algorithm the right "answers" so the final result is not "infected" with faulty data.
+the train data is used to obviously train the algorithm, while the test data is the "questions" and the "right answer" you want the algorithm to come as close as possible to.
+
 
 f) What is data leakage, why is it bad and how can you avoid it?
+f) data leakage is that you leak test data into the training data. this will give you an unrealistically optimistic result that creates an illusion that the algorithm works better than it actually does.  
+you have to make sure that you DO NOT leak the test data into the train data. 
+To avoid data leakage you must perform all data preprocessing steps AFTER you have made train|test split. You should always fit any preprocessing steps only on the training data, and then use that same transformation to process the test data. This ensures that the model doesnt learn from the test data during the training phase.
 
 g) What are some common evaluation metrics for regression models?
+the three most common ones are:
+MAE (Mean Absolute Error)
+MSE (Mean Squared Error)
+RMSE (Root Mean Squared Error)
+
+MAE calculates the average absolute difference between the predicted values and the actual values.
+MSE calculates the average Squared error between the predicted values and the actual value.
+RMSE(most common) Is used to calculate the square root of the MSE. It is often preferred because it is in the same value as the target value but it still penalizes large errors more heavily.
 
 ## Glossary
 
@@ -57,20 +74,20 @@ Fill in this table either by copying this into your own markdown file or copy it
 
 | Terminology          | Meaning |
 | :------------------- | ------: |
-| supervised learning  |         |
-| machine learning     |         |
-| data science         |         |
-| data engineering     |         |
-| algorithm            |         |
-| regression           |         |
-| classification       |         |
-| qualitative data     |         |
-| quantitative data    |         |
+| supervised learning  |You train an algorithm using data that contains both the input and the correct answers (labels).                                                    |
+| machine learning     |Where a computer is trained to learn from data without being explicitly programmed for every task.                                                  |
+| data science         |Uses data to find insights and solve problems.                                                                                                      |
+| data engineering     |Focuses on building and maintaining the system that collect and store data.                                                                         |
+| algorithm            |Set of instructions or rules a computer follows to sole a problem or build a model.                                                                 |
+| regression           |A type of machine learning problem where the goal is to predict a numerical value (for example, the price of a house).                              |
+| classification       |A type of machine learning problem where the goal is to predict a category or a label (for example, whether an image shows a cat or a dog).         |
+| qualitative data     |Descriptive information that is based on qualities and cant me measured with numbers, such as opinions etc.                                         |
+| quantitative data    |Numerical information that can be counted or measured, such as height, weight, age, etc.                                                            |
 | independent variable |         |
 | dependent variable   |         |
 | label                |         |
 | feature              |         |
 | model                |         |
 | training             |         |
-| evaluation           |         |
-| prediction           |         |
+| evaluation           |The process of measuring how well a trained model performs on a given task by comparing its predictions to the actual answers.                      |
+| prediction           |The result or guess that a trained model provides when it is given new data to work with.                                                           |

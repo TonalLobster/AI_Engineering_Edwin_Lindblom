@@ -83,11 +83,11 @@ Fill in this table either by copying this into your own markdown file or copy it
 | classification       |A type of machine learning problem where the goal is to predict a category or a label (for example, whether an image shows a cat or a dog).         |
 | qualitative data     |Descriptive information that is based on qualities and cant me measured with numbers, such as opinions etc.                                         |
 | quantitative data    |Numerical information that can be counted or measured, such as height, weight, age, etc.                                                            |
-| independent variable |         |
-| dependent variable   |         |
-| label                |         |
-| feature              |         |
-| model                |         |
-| training             |         |
+| independent variable |Input used to make a prediction.                                                                                                                    |
+| dependent variable   |Output the models are trying to predict.                                                                                                            |
+| label                |The target value the model is being trained to predict. same as dependent variable.                                                                 |
+| feature              |Same as independent variable. A part of the data used as an input to the model.                                                                     |
+| model                |model is something you create by training an algorithm.                                                                                             |
+| training             |Training the model is that you make the model as good as it can be for your specific purpose.                                                       |
 | evaluation           |The process of measuring how well a trained model performs on a given task by comparing its predictions to the actual answers.                      |
 | prediction           |The result or guess that a trained model provides when it is given new data to work with.                                                           |

@@ -215,3 +215,6 @@ __marimo__/
 
 # duckdb
 *.duckdb
+
+# markdown files
+schedule_until_14_sep.md

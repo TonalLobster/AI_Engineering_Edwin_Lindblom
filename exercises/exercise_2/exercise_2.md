@@ -125,17 +125,15 @@ Fill in this table either by copying this into your own markdown file or copy it
 
 | terminology    | explanation |
 | -------------- | ----------- |
-| target         |             |
-| training set   |             |
-| validation set |             |
-| test set       |             |
-| recall         |             |
-| f1 score       |             |
+| target         |What we want to achieve.                                                                                          |
+| training set   |The data we train the model on.                                                                                   |
+| validation set |"Practice" data to find where the model preforms poorly so we can fine tune those parts of the model.             |
+| test set       |Used to get a final, unbiased evaluation of how the fully trained model performs on new, unseen data.             |
+| recall         |Measures the models ability to find relevant positive cases. Important when you want to minimize false negatives. |
+| f1 score       |A single score that represents the balance between precision and recall.                                          |
 | regularization |             |
 | hyperparameter |             |
 | overfitting    |             |
 | underfitting   |             |
 | feature        |             |
 | precision      |             |
-|                |             |
-|                |             |

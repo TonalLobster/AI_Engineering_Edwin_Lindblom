@@ -125,15 +125,15 @@ Fill in this table either by copying this into your own markdown file or copy it
 
 | terminology    | explanation |
 | -------------- | ----------- |
-| target         |What we want to achieve.                                                                                          |
-| training set   |The data we train the model on.                                                                                   |
-| validation set |"Practice" data to find where the model preforms poorly so we can fine tune those parts of the model.             |
-| test set       |Used to get a final, unbiased evaluation of how the fully trained model performs on new, unseen data.             |
-| recall         |Measures the models ability to find relevant positive cases. Important when you want to minimize false negatives. |
-| f1 score       |A single score that represents the balance between precision and recall.                                          |
-| regularization |             |
-| hyperparameter |             |
-| overfitting    |             |
-| underfitting   |             |
-| feature        |             |
-| precision      |             |
+| target         |What we want to achieve.                                                                                                  |
+| training set   |The data we train the model on.                                                                                           |
+| validation set |"Practice" data to find where the model preforms poorly so we can fine tune those parts of the model.                     |
+| test set       |Used to get a final, unbiased evaluation of how the fully trained model performs on new, unseen data.                     |
+| recall         |Measures the models ability to find relevant positive cases. Important when you want to minimize false negatives.         |
+| f1 score       |A single score that represents the balance between precision and recall.                                                  |
+| regularization |A technique to prevent overfitting by penalizing complex models and forcing it to focus on more general parts of the data.|
+| hyperparameter |a setting the user must choose that the model cant. Like K in KNN or n_estimators in a Random Forest.                     |
+| overfitting    |When you "over train" the model on the training data, making it preform poorly on new unseen data.                        |
+| underfitting   |When a model is too simple to capture the underlying structure of the data.                                               |
+| feature        |Just a fancy word for a column in the data.                                                                               |
+| precision      |How trustworthy the models "yes" answers are.                                                                             |

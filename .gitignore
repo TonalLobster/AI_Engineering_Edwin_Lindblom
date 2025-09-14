@@ -215,6 +215,12 @@ __marimo__/
 
 # duckdb
 *.duckdb
+*.db
+*.db-shm
+*.db-wal
+
+# Ignore output files
+output_data/
 
 # markdown files
 schedule_until_14_sep.md

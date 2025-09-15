@@ -1,18 +1,23 @@
 from fastapi import FastAPI
+from data_processing import DataExplorer
+import pandas as pd
 
 
-
+data_explorer = DataExplorer()
 app = FastAPI()
 
 
 @app.get("/api/sales")
 async def read_sales():
-    # Todo. implpement this code to return json data in this endpoint
-    return ...
+    # Todo. implpement this code to return json data in this endpoint¨
+    return data_explorer.json_response()
 
 @app.get("/api/summary")
 async def read_summary_data():
     """shows summary statistics of the sales data"""
+    summary = DataExplorer().df.describe()
+
+
     return ...
 
 

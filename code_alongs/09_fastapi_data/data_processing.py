@@ -14,23 +14,24 @@ class DataExplorer:
     @property
     def df(self):
         return self._df
-    
-
 
     def kpis(self, country: str):
         """Filter out kpis based on country"""
-        df_by_country = self._df_full.query("Country.str.casefold() == @country.casefold()")
+        df_by_country = self._df_full.query(
+            "Country.str.casefold() == @country.casefold()"
+        )
         return {
             "total_profit": str(df_by_country("Profit").sum()),
             "total_cost": str(df_by_country["Cost"].sum()),
-            "number_of_purchases": str(len(df_by_country))
+            "number_of_purchases": str(len(df_by_country)),
         }
 
     def summary(self):
         self._df = (
             self._df_full.describe()
             .T.drop(["count"], axis=1)
-            .drop(["Day", "Year"]).reset_index()
+            .drop(["Day", "Year"])
+            .reset_index()
         )
         # print()
         return self
@@ -39,9 +40,6 @@ class DataExplorer:
         json_data = self.df.to_json(orient="records")
         print(type(json_data))
         return json.loads(json_data)
-    
-
-
 
 
 if __name__ == "__main__":

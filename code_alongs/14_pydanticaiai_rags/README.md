@@ -6,4 +6,5 @@
 2. Ingest the data into LanceDB (custom, but coulde be e.g. dlt-lance)
 3. Create data models (pydantic models) for agent to get structured output
 4. RAG with some prompt engineering and a tool to retrieve documents
-5. 
+5. Create a FastAPI API to serve the RAG model
+6. Consume API with Streamlit frontend
